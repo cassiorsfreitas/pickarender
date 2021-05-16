@@ -1,0 +1,14 @@
+.header-container{
+  text-align: center;
+}
+
+.header-container h1{
+  font-size: 3em;
+  color: #D8E8F5;
+}
+
+.header-container h2{
+  font-size: 1.5em;
+  margin-top: 30px;
+  color: #91BED5;
+}
