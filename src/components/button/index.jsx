@@ -12,6 +12,14 @@ const Button = (props) => {
   let history = useHistory();
 
   function handleClick() {
+    if (id === null) {
+      return history.push('/result');
+    }
+
+    if (!id) {
+      return history.push('/');
+    }
+
     direction === 'back' ? history.goBack() : history.push(`/question/${nextId}`);
   }
 
