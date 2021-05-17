@@ -7,11 +7,13 @@
   border-radius: 20px;
 }
 
-.welcome-container p {
+.container p {
   color: #2B4369;
 }
 
-.button-container {
+.button-area {
   margin-top: 30px;
-  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
 }

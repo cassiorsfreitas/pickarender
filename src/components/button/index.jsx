@@ -1,15 +1,27 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import './style.css';
 
-const Button = (props) => (
-  <>
-    <Link to="/question">
-      <button className="button">{props.text}</button>
-    </Link>
-  </>
-);
+const Button = (props) => {
+  const direction = props.direction;
+  const id = props.id;
+  const nextId = parseInt(id) + 1;
+
+  let history = useHistory();
+
+  function handleClick() {
+    direction === 'back' ? history.goBack() : history.push(`/question/${nextId}`);
+  }
+
+  return (
+    <>
+      <button className="button" onClick={() => handleClick()}>
+        {props.text}
+      </button>
+    </>
+  );
+};
 
 export default Button;
