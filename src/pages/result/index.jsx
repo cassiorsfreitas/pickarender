@@ -1,17 +1,27 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import Transition from '../../transitions';
-import Button from '../../components/button';
 
-const Result = () => (
-  <Transition>
-    <div className="container">
-      <p>Result here!</p>
-      <div className="button-area">
-        <Button className="button" text="RETRAY" />
+const Result = () => {
+  let history = useHistory();
+
+  function handleClick() {
+    history.push('/');
+  }
+
+  return (
+    <Transition>
+      <div className="container">
+        <p>Result here!</p>
+        <div className="button-area">
+          <button className="button" onClick={handleClick}>
+            RETRAY
+          </button>
+        </div>
       </div>
-    </div>
-  </Transition>
-);
+    </Transition>
+  );
+};
 
 export default Result;

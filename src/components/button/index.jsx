@@ -12,11 +12,11 @@ const Button = (props) => {
   let history = useHistory();
 
   function handleClick() {
-    if (id === null) {
+    if (id === null && direction !== 'back') {
       return history.push('/result');
     }
 
-    if (!id) {
+    if (!id && direction !== 'back') {
       return history.push('/');
     }
 
