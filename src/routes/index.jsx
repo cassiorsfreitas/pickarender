@@ -1,17 +1,28 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect, useHistory } from 'react-router-dom';
 
 import Question from '../pages/question/index ';
 import Result from '../pages/result';
 import Welcome from '../pages/welcome';
 
-const Routes = () => (
-  <Switch>
-    <Route exact path="/" component={Welcome} />
-    <Route path="/question/:id" component={Question} />
-    <Route path="/result" component={Result} />
-    <Redirect from="*" to="/" />
-  </Switch>
-);
+import quiz from '../quiz';
+
+const Routes = () => {
+  let history = useHistory();
+
+  return (
+    <Switch>
+      <Route exact path="/" component={Welcome} />
+      <Route path="/question/:id" component={Question} />
+      <Route path="/result" component={Result} />
+      <Redirect from="*" to="/" />
+      {quiz.map((option) => {
+        if (option.selected === '') {
+          return history.push('/');
+        }
+      })}
+    </Switch>
+  );
+};
 
 export default Routes;

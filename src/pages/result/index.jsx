@@ -3,17 +3,22 @@ import { useHistory } from 'react-router-dom';
 
 import Transition from '../../transitions';
 
+import quiz from '../../quiz';
+
 const Result = () => {
   let history = useHistory();
 
   function handleClick() {
+    quiz.map((question) => (question.selected = ''));
     history.push('/');
   }
 
   return (
     <Transition>
       <div className="container">
-        <p>Result here!</p>
+        <p>Result SSG!</p>
+        <p>Result SPA!</p>
+        <p>Result SSR!</p>
         <div className="button-area">
           <button className="button" onClick={handleClick}>
             RETRAY

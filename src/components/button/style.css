@@ -8,6 +8,10 @@
   padding: 10px 20px;
 }
 
+.disabled{
+  background-color: #91BED5;
+}
+
 .button:hover{
   cursor: pointer;
 }

@@ -5,7 +5,7 @@ import ProgressBar from '@ramonak/react-progress-bar';
 
 const Progress = (props) => {
   let { id } = useParams();
-  let loading = id * (100 / props.potato);
+  let loading = Math.round(id * (100 / props.potato));
 
   return (
     <div className="bar">

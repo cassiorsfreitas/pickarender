@@ -10,6 +10,7 @@ const Welcome = () => (
     <div className="container">
       <p>
         In the last decade, front-end development went through multiple paradigm changes that make it hard to follow.
+        SSG? SPA? SSR? Which to choose?
       </p>
       <div className="button-area">
         <Button text="TRY IT" direction="next" id="0" />
