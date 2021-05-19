@@ -42,7 +42,7 @@ const Result = () => {
             <div className="numberResults">{spaPercent}%</div>
             <div className="textResults">
               <span>SPA:</span> Your web project source code (mostly JavaScript) is responsible for filling, interacting
-              and navigating between your application contents inside the available renderer (your user’s web browser).
+              and navigating between your application contents inside the available rendered (your user’s web browser).
             </div>
           </div>
           <div className="rowResults">
