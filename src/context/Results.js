@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState, createContext, useEffect } from 'react';
+import React, { useState, createContext } from 'react';
 
 const ResultsContext = createContext();
 
@@ -8,11 +8,11 @@ function ResultsProvider({ children }) {
   const [spa, updateSpa] = useState(0);
   const [ssr, updateSsr] = useState(0);
 
-  useEffect(() => {
-    console.log(`SSG: ${ssg}`);
-    console.log(`SPA: ${spa}`);
-    console.log(`SSR: ${ssr}`);
-  }, [ssg, spa, ssr]);
+  // useEffect(() => {
+  //   console.log(`SSG: ${ssg}`);
+  //   console.log(`SPA: ${spa}`);
+  //   console.log(`SSR: ${ssr}`);
+  // }, [ssg, spa, ssr]);
 
   function resetRenders() {
     updateSsg(0);

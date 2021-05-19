@@ -35,7 +35,6 @@ export default function Form(props) {
   } = useForm();
 
   let watchInput = watch('Selected', null);
-  console.log('picking', watchInput);
   let statusButton = watchInput !== null ? '' : 'disabled';
 
   const onSubmit = (data) => {
