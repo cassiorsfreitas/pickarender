@@ -1,6 +1,7 @@
 .columnResults{
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .rowResults{
@@ -11,4 +12,12 @@
 .numberResults{
   font-size: 3em;
   color: #F16101;
+}
+
+.textResults{
+  color: #2B4369;
+}
+
+.textResults span {
+  font-weight: 600;
 }
