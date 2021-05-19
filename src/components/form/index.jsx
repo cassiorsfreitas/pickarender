@@ -1,11 +1,16 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useContext } from 'react';
+// import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 
 import './style.css';
 
+import { ResultsContext } from '../../context/Results';
+
 export default function Form(props) {
+  const { updatingResult } = useContext(ResultsContext);
+
   // eslint-disable-next-line no-unused-vars
   const id = props.id;
   const questionId = parseInt(id) - 1;
@@ -30,11 +35,11 @@ export default function Form(props) {
   } = useForm();
 
   let watchInput = watch('Selected', null);
-  console.log('here', watchInput);
+  console.log('picking', watchInput);
   let statusButton = watchInput !== null ? '' : 'disabled';
 
   const onSubmit = (data) => {
-    console.log(data.Selected);
+    updatingResult(data.Selected);
     reset();
     handleNextPage();
   };

@@ -18,7 +18,7 @@ const Routes = () => {
       <Redirect from="*" to="/" />
       {quiz.map((option) => {
         if (option.selected === '') {
-          return history.push('/');
+          history.push('/');
         }
       })}
     </Switch>

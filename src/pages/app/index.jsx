@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ResultsProvider } from '../../context/Results';
 
 import './style.css';
 
@@ -8,13 +9,15 @@ import Footer from '../../components/footer';
 import Routes from '../../routes';
 
 const App = () => (
-  <Router>
-    <div className="app-container">
-      <Header />
-      <Routes />
-      <Footer />
-    </div>
-  </Router>
+  <ResultsProvider>
+    <Router>
+      <div className="app-container">
+        <Header />
+        <Routes />
+        <Footer />
+      </div>
+    </Router>
+  </ResultsProvider>
 );
 
 export default App;

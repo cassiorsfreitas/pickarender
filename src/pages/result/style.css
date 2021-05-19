@@ -1,0 +1,14 @@
+.columnResults{
+  display: flex;
+  flex-direction: column;
+}
+
+.rowResults{
+  display: flex;
+  gap: 20px;
+}
+
+.numberResults{
+  font-size: 3em;
+  color: #F16101;
+}
