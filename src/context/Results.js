@@ -8,12 +8,6 @@ function ResultsProvider({ children }) {
   const [spa, updateSpa] = useState(0);
   const [ssr, updateSsr] = useState(0);
 
-  // useEffect(() => {
-  //   console.log(`SSG: ${ssg}`);
-  //   console.log(`SPA: ${spa}`);
-  //   console.log(`SSR: ${ssr}`);
-  // }, [ssg, spa, ssr]);
-
   function resetRenders() {
     updateSsg(0);
     updateSpa(0);
