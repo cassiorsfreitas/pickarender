@@ -21,4 +21,4 @@ When we talk about SSR in the JavaScript world, what we really mean in JavaScrip
 
 ## Try it!
 
-[Demo <PickARender_>](http://handlebarsjs.com/)
+[Demo <PickARender_>](https://pickarender.vercel.app/)
