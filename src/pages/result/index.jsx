@@ -34,23 +34,24 @@ const Result = () => {
           <div className="rowResults">
             <div className="numberResults">{ssgPercent}%</div>
             <div className="textResults">
-              <span>SSG:</span> Static Site Generator are a great alternative to Single Page Apps if you care about SEO
-              and if your website is heavy with public content.
+              <span>SSG (Static Site Generator):</span> Great alternative to Single Page Apps if you care about SEO and
+              if your website is heavy with public content.
             </div>
           </div>
           <div className="rowResults">
             <div className="numberResults">{spaPercent}%</div>
             <div className="textResults">
-              <span>SPA:</span> Your web project source code (mostly JavaScript) is responsible for filling, interacting
-              and navigating between your application contents inside the available rendered (your user’s web browser).
+              <span>SPA (Single Page Application):</span> Your web project source code (mostly JavaScript) is
+              responsible for filling, interacting and navigating between your application contents inside the available
+              rendered (your user’s web browser).
             </div>
           </div>
           <div className="rowResults">
             <div className="numberResults">{ssrPercent}%</div>
             <div className="textResults">
-              <span>SSR:</span> When we talk about SSR in the JavaScript world, what we really mean in JavaScript
-              isomorphic rendering. With the advent of NodeJS, JavaScript can now run both in the server and the client,
-              which makes sharing rendering logic possible.
+              <span>SSR (Server Side Rendering):</span> When we talk about SSR in the JavaScript world, what we really
+              mean in JavaScript isomorphic rendering. With the advent of NodeJS, JavaScript can now run both in the
+              server and the client, which makes sharing rendering logic possible.
             </div>
           </div>
         </div>
