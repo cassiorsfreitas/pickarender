@@ -1,6 +1,6 @@
 # <PickARender_>
 
-Hi! In the last decade, **front-end** development went through **multiple paradigm** changes that make it hard to follow. SSG? SPA? SSR? Which one?
+In the last decade **front-end** development went through **multiple paradigm** changes that make it hard to follow. SSG? SPA? SSR? Which one?
 
 
 # Preview
